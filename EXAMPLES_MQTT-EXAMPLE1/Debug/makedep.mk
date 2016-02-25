@@ -260,7 +260,11 @@ src\ASF\thirdparty\wireless\SmartConnect_6LoWPAN\core\sys\timer.c
 
 src\ASF\thirdparty\wireless\SmartConnect_6LoWPAN\dev\at86rf233\rf233.c
 
+src\ASF\thirdparty\wireless\SmartConnect_6LoWPAN\examples\mqtt-example\samr21_xpro\dimmer_PWM.c
+
 src\ASF\thirdparty\wireless\SmartConnect_6LoWPAN\examples\mqtt-example\samr21_xpro\lightDNA.c
+
+src\ASF\thirdparty\wireless\SmartConnect_6LoWPAN\examples\mqtt-example\samr21_xpro\tcc.c
 
 src\ASF\thirdparty\wireless\SmartConnect_6LoWPAN\services\sam0\button-sensor.c
 

@@ -2513,10 +2513,22 @@
     <Compile Include="src\ASF\thirdparty\wireless\SmartConnect_6LoWPAN\dev\at86rf233\rf233.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="src\ASF\thirdparty\wireless\SmartConnect_6LoWPAN\examples\mqtt-example\samr21_xpro\dimmer_PWM.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\wireless\SmartConnect_6LoWPAN\examples\mqtt-example\samr21_xpro\dimmer_PWM.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="src\ASF\thirdparty\wireless\SmartConnect_6LoWPAN\examples\mqtt-example\samr21_xpro\lightDNA.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="src\ASF\thirdparty\wireless\SmartConnect_6LoWPAN\examples\mqtt-example\samr21_xpro\LightDNA.h">
+    <Compile Include="src\ASF\thirdparty\wireless\SmartConnect_6LoWPAN\examples\mqtt-example\samr21_xpro\lightDNA.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\wireless\SmartConnect_6LoWPAN\examples\mqtt-example\samr21_xpro\tcc.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\ASF\thirdparty\wireless\SmartConnect_6LoWPAN\examples\mqtt-example\samr21_xpro\tcc.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="src\ASF\thirdparty\wireless\SmartConnect_6LoWPAN\services\sam0\button-sensor.c">

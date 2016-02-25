@@ -55,7 +55,8 @@
 #include "dev/leds.h"
 //#include "dev/cc2538-sensors.h"
 
-#include "LightDNA.h"
+#include "lightDNA.h"
+#include "dimmer_PWM.h"
 #include <string.h>
 /*---------------------------------------------------------------------------*/
 /*
@@ -457,6 +458,7 @@ publish(void)
 	seq_nr_value++;
 
 	buf_ptr = app_buffer;
+	
 	if (configure_i2c_light() != OK)
 	printf("Erro ao inicializar o I2C\n\r");
 	else  printf("inicializado o I2C\n\r");

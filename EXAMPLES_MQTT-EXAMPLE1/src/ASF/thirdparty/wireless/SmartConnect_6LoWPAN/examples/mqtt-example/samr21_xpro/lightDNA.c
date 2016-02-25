@@ -14,7 +14,7 @@
 */
 
 
-#include "LightDNA.h"
+#include "lightDNA.h"
 
 int configure_i2c_light(void)
 {
@@ -59,7 +59,6 @@ int init_i2c_light (void){
 int read_dimmer(uint8_t command){
 	int result = 0;
 	int timeout = 0;
-	int  x = 0;
 	
 	uint8_t reciever_buffer[6];
 	reciever_buffer[0] = 0x03;
@@ -90,9 +89,9 @@ int read_dimmer(uint8_t command){
 			break;
 		}
 	}
-	x = reciever_buffer[0]<<8;
-	x |=reciever_buffer[1];
-	printf("x: %d\n\r",x);
+	result = reciever_buffer[0]<<8;
+	result |=reciever_buffer[1];
+	printf("x: %d\n\r",result);
 	
-	return x;
+	return result;
 }

@@ -293,7 +293,9 @@ C_SRCS +=  \
 ../src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/core/sys/stimer.c \
 ../src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/core/sys/timer.c \
 ../src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/dev/at86rf233/rf233.c \
+../src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/examples/mqtt-example/samr21_xpro/dimmer_PWM.c \
 ../src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/examples/mqtt-example/samr21_xpro/lightDNA.c \
+../src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/examples/mqtt-example/samr21_xpro/tcc.c \
 ../src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/services/sam0/button-sensor.c \
 ../src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/services/sam0/edbg-eui.c \
 ../src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/services/sam0/flash.c \
@@ -446,7 +448,9 @@ src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/core/sys/rtimer.o \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/core/sys/stimer.o \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/core/sys/timer.o \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/dev/at86rf233/rf233.o \
+src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/examples/mqtt-example/samr21_xpro/dimmer_PWM.o \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/examples/mqtt-example/samr21_xpro/lightDNA.o \
+src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/examples/mqtt-example/samr21_xpro/tcc.o \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/services/sam0/button-sensor.o \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/services/sam0/edbg-eui.o \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/services/sam0/flash.o \
@@ -592,7 +596,9 @@ src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/core/sys/rtimer.o \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/core/sys/stimer.o \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/core/sys/timer.o \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/dev/at86rf233/rf233.o \
+src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/examples/mqtt-example/samr21_xpro/dimmer_PWM.o \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/examples/mqtt-example/samr21_xpro/lightDNA.o \
+src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/examples/mqtt-example/samr21_xpro/tcc.o \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/services/sam0/button-sensor.o \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/services/sam0/edbg-eui.o \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/services/sam0/flash.o \
@@ -738,7 +744,9 @@ src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/core/sys/rtimer.d \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/core/sys/stimer.d \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/core/sys/timer.d \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/dev/at86rf233/rf233.d \
+src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/examples/mqtt-example/samr21_xpro/dimmer_PWM.d \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/examples/mqtt-example/samr21_xpro/lightDNA.d \
+src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/examples/mqtt-example/samr21_xpro/tcc.d \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/services/sam0/button-sensor.d \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/services/sam0/edbg-eui.d \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/services/sam0/flash.d \
@@ -884,7 +892,9 @@ src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/core/sys/rtimer.d \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/core/sys/stimer.d \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/core/sys/timer.d \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/dev/at86rf233/rf233.d \
+src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/examples/mqtt-example/samr21_xpro/dimmer_PWM.d \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/examples/mqtt-example/samr21_xpro/lightDNA.d \
+src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/examples/mqtt-example/samr21_xpro/tcc.d \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/services/sam0/button-sensor.d \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/services/sam0/edbg-eui.d \
 src/ASF/thirdparty/wireless/SmartConnect_6LoWPAN/services/sam0/flash.d \
@@ -915,6 +925,10 @@ LINKER_SCRIPT_DEP+=  \
 
 
 # AVR32/GNU C Compiler
+
+
+
+
 
 
 
@@ -1558,7 +1572,7 @@ all: $(OUTPUT_FILE_PATH) $(ADDITIONAL_DEPENDENCIES)
 $(OUTPUT_FILE_PATH): $(OBJS) $(USER_OBJS) $(OUTPUT_FILE_DEP) $(LIB_DEP) $(LINKER_SCRIPT_DEP)
 	@echo Building target: $@
 	@echo Invoking: ARM/GNU Linker : 4.9.3
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) @"C:\Users\awges\Desktop\EXAMPLES_MQTT-EXAMPLE1\EXAMPLES_MQTT-EXAMPLE1\Debug\ld_ar.mk"  $(USER_OBJS) $(LIBS) -mthumb -Wl,-Map="EXAMPLES_MQTT-EXAMPLE1_6_2.map" --specs=nano.specs -Wl,--start-group -larm_cortexM0l_math -lm  -Wl,--end-group -L"../cmsis/linkerScripts" -L"../src/ASF/thirdparty/CMSIS/Lib/GCC"  -Wl,--gc-sections -mcpu=cortex-m0plus -Wl,--entry=Reset_Handler -Wl,--cref -mthumb -T../src/ASF/sam0/utils/linker_scripts/samr21/gcc/samr21g18a_flash.ld  
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) @"C:\Users\awges\Desktop\AWGES contiki\StormSAMR21\EXAMPLES_MQTT-EXAMPLE1\Debug\ld_ar.mk"  $(USER_OBJS) $(LIBS) -mthumb -Wl,-Map="EXAMPLES_MQTT-EXAMPLE1_6_2.map" --specs=nano.specs -Wl,--start-group -larm_cortexM0l_math -lm  -Wl,--end-group -L"../cmsis/linkerScripts" -L"../src/ASF/thirdparty/CMSIS/Lib/GCC"  -Wl,--gc-sections -mcpu=cortex-m0plus -Wl,--entry=Reset_Handler -Wl,--cref -mthumb -T../src/ASF/sam0/utils/linker_scripts/samr21/gcc/samr21g18a_flash.ld  
 	@echo Finished building target: $@
 	"C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-objcopy.exe" -O binary "EXAMPLES_MQTT-EXAMPLE1_6_2.elf" "EXAMPLES_MQTT-EXAMPLE1_6_2.bin"
 	"C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature  "EXAMPLES_MQTT-EXAMPLE1_6_2.elf" "EXAMPLES_MQTT-EXAMPLE1_6_2.hex"
@@ -1578,5 +1592,5 @@ clean:
 	-$(RM) $(OBJS_AS_ARGS) $(EXECUTABLES)  
 	-$(RM) $(C_DEPS_AS_ARGS)   
 	rm -rf "EXAMPLES_MQTT-EXAMPLE1_6_2.elf" "EXAMPLES_MQTT-EXAMPLE1_6_2.a" "EXAMPLES_MQTT-EXAMPLE1_6_2.hex" "EXAMPLES_MQTT-EXAMPLE1_6_2.bin" "EXAMPLES_MQTT-EXAMPLE1_6_2.lss" "EXAMPLES_MQTT-EXAMPLE1_6_2.eep" "EXAMPLES_MQTT-EXAMPLE1_6_2.map" "EXAMPLES_MQTT-EXAMPLE1_6_2.srec"
-	rm -rf "C:\Users\awges\Desktop\EXAMPLES_MQTT-EXAMPLE1\EXAMPLES_MQTT-EXAMPLE1\Debug\ld_ar.mk"
+	rm -rf "C:\Users\awges\Desktop\AWGES contiki\StormSAMR21\EXAMPLES_MQTT-EXAMPLE1\Debug\ld_ar.mk"
 	

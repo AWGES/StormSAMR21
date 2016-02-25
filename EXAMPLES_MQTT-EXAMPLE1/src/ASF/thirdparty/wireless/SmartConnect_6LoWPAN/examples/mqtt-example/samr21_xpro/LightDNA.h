@@ -12,6 +12,8 @@
 #include "samr21_xplained_pro/samr21_xplained_pro.h"
 #include "i2c_master.h"
 #include "i2c_common.h"
+#include "dimmer_PWM.h"
+
 #define CONF_I2C_MASTER_MODULE    SERCOM1
 
 #define DIMMER_LIGHT_I2C_ADDR			0x1E

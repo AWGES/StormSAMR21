@@ -73,6 +73,7 @@
 #include "rtc_count.h" //rtc
 #include "rtc_count_interrupt.h"
 #include "LightDNA.h"
+#include "dimmer_PWM.h"
 
 //SENSORS(&button_sensor);
 /*---------------------------------------------------------------------------*/
@@ -184,6 +185,12 @@ main(int argc, char *argv[])
 	#else/* NODE_ID */
 	#endif /* NODE_ID */
 
+
+
+
+
+
+
 	node_id_restore();
 	printf("\r\n\n\n\n Starting the SmartConnect-6LoWPAN \r\n Platform : Atmel IoT device \r\n\r");
 	print_reset_causes();
@@ -279,7 +286,11 @@ main(int argc, char *argv[])
 	printf("x: %d\n\r", read_dimmer(0));
 	*/
 	
-	while(1){	
+	pwm_init();
+	conf_duty_cicle(150);
+	
+	
+	while(1){
 		int r = 0;
 		#if UART_RX_ENABLE
 		serial_data_handler();
